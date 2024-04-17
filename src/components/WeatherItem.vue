@@ -36,7 +36,7 @@ export default {
     .weather-col {
       display: block;
       width: 200px;
-      border: 2px solid green;
+      border: 2px solid rgb(4, 129, 4);
       border-radius: 5px;
       box-sizing: border-box;
       padding: 24px 16px;

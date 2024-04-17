@@ -1,6 +1,8 @@
 <template>
     <div class="weather-panel">
-        <weather-item></weather-item>
+        <div class="weather-cards">
+            <weather-item></weather-item>
+        </div>
     </div>
 </template>
 
@@ -13,9 +15,15 @@ export default {
 
 <style lang="scss" scoped>
     .weather-panel{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: block;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    .weather-cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 25px;
     }
 </style>
